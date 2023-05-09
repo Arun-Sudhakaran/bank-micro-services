@@ -1,0 +1,30 @@
+version: "1.0"
+
+services:
+
+    accounts:
+        image: sukku10/accounts:latest
+        mem_limit: 700m
+        ports:
+            - "1010:1010"
+        networks:
+            - aht-network
+
+    loans:
+        image: sukku10/loans:latest
+        mem_limit: 700m
+        ports:
+            - "1020:1020"
+        networks:
+            - aht-network
+
+    cards:
+        image: sukku10/cards:latest
+        mem_limit: 700m
+        ports:
+            - "1030:1030"
+        networks:
+            - aht-network
+
+networks:
+    aht-network:

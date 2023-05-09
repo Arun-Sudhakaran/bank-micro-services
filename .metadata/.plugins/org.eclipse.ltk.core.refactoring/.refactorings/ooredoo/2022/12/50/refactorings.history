@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.sixdee.ooredoo.util.ECCEncryption&apos; to &apos;ECCKeyGenerator&apos;&#x0D;&#x0A;- Original project: &apos;ooredoo&apos;&#x0D;&#x0A;- Original element: &apos;com.sixdee.ooredoo.util.ECCEncryption&apos;&#x0D;&#x0A;- Renamed element: &apos;com.sixdee.ooredoo.util.ECCKeyGenerator&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ECCEncryption&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.sixdee.ooredoo.util{ECCEncryption.java[ECCEncryption" matchStrategy="1" name="ECCKeyGenerator" qualified="false" references="true" similarDeclarations="false" stamp="1670574683863" textual="false" version="1.0"/>
+</session>

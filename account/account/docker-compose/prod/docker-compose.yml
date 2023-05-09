@@ -1,0 +1,96 @@
+version: "3.8"
+
+services:
+
+  configserver:
+    image: sukku10/cloud-config-server:latest
+    mem_limit: 700m
+    ports:
+      - "8071:8071"
+    networks:
+     - aht-network
+     
+  eureka-server:
+    image: sukku10/eureka-server:latest
+    mem_limit: 700m
+    ports:
+      - "8070:8070"
+    networks:
+     - aht-network
+    depends_on:
+      - configserver
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 15s
+        max_attempts: 3
+        window: 120s
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+      SPRING_CONFIG_IMPORT: configserver:http://configserver:8071/
+      
+  accounts:
+    image: sukku10/accounts:latest
+    mem_limit: 700m
+    ports:
+      - "1010:1010"
+    networks:
+      - aht-network
+    depends_on:
+      - configserver
+      - eureka-server
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+      SPRING_CONFIG_IMPORT: configserver:http://configserver:8071/
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-server:8070/eureka/
+  
+  loans:
+    image: sukku10/loans:latest
+    mem_limit: 700m
+    ports:
+      - "1020:1020"
+    networks:
+      - aht-network
+    depends_on:
+      - configserver
+      - eureka-server
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+      SPRING_CONFIG_IMPORT: configserver:http://configserver:8071/
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-server:8070/eureka/
+    
+  cards:
+    image: sukku10/cards:latest
+    mem_limit: 700m
+    ports:
+      - "1030:1030"
+    networks:
+      - aht-network
+    depends_on:
+      - configserver
+      - eureka-server
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+      SPRING_CONFIG_IMPORT: configserver:http://configserver:8071/
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-server:8070/eureka/
+      
+networks:
+  aht-network:

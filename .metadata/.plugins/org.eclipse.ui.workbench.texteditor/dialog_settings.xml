@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="account"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="true"/>
+		<item key="wholeword" value="true"/>
+		<item key="incremental" value="true"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="account"/>
+			<item value="create_dt"/>
+			<item value="outstanding_amount"/>
+			<item value="amount_paid"/>
+			<item value="total_loan"/>
+			<item value="loan_type"/>
+			<item value="start_dt"/>
+			<item value="customer_id"/>
+			<item value="loan_number"/>
+			<item value="logger"/>
+			<item value="fe72be45036d9f6f"/>
+			<item value="&quot;animals.txt&quot;"/>
+			<item value="eazybank"/>
+			<item value="&quot;)&quot;"/>
+			<item value="&quot;(&quot;"/>
+		</list>
+		<list key="replacehistory">
+			<item value="LOG"/>
+			<item value="aht"/>
+			<item value="&quot;\\)&quot;"/>
+			<item value="&quot;\\(&quot;"/>
+			<item value=""/>
+			<item value="]"/>
+			<item value="["/>
+			<item value="&lt;"/>
+			<item value="&gt;"/>
+			<item value="t"/>
+			<item value="s"/>
+			<item value="false"/>
+			<item value="Exception"/>
+			<item value="SwiggyCrudRequest"/>
+			<item value="SwiggyCrudResponse"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="988"/>
+		<item key="DIALOG_Y_ORIGIN" value="180"/>
+		<item key="DIALOG_WIDTH" value="284"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

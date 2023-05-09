@@ -1,0 +1,7 @@
+<repositories>
+        <repository>
+            <id>6D</id>
+            <name>etopup base</name>
+            <url>http://10.0.14.79:8081/repository/6d-archived-common/</url>
+        </repository>
+    </repositories>

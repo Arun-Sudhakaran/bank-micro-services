@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Properties.java&apos; to &apos;cards/src/main/java/com.aht.cards.model&apos;&#x0D;&#x0A;- Original project: &apos;loans&apos;&#x0D;&#x0A;- Destination element: &apos;cards/src/main/java/com.aht.cards.model&apos;&#x0D;&#x0A;- Original element: &apos;com.aht.loans.beans.Properties.java&apos;" description="Copy compilation unit" destination="=cards/src\/main\/java&lt;com.aht.cards.model" element1="/src\/main\/java&lt;com.aht.loans.beans{Properties.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1668008187838" units="1" version="1.0"/>
+</session>
